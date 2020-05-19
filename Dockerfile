@@ -1,4 +1,4 @@
-FROM python:stretch
+FROM python:3.7.0-stretch
 
 COPY . /deployable
 WORKDIR /deployable
