@@ -102,6 +102,16 @@ def decode_jwt():
                 'nbf': data['nbf'] }
     return jsonify(**response)
 
+@APP.route('/special', methods=['GET'])
+def special_route():
+  """
+  'Special' route created just for new commit to github to test CodePipeline
+  """
+  return jsonify({
+    "success": True,
+    "message": "Congratulations, you found the special page."
+  })
+
 
 def _get_jwt(user_data):
     exp_time = datetime.datetime.utcnow() + datetime.timedelta(weeks=2)

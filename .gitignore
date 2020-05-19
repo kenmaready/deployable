@@ -5,6 +5,7 @@
 *.pyo
 env/
 env*
+/github-access.txt
 dist/
 build/
 *.egg
