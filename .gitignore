@@ -4,8 +4,8 @@
 *.pyc
 *.pyo
 env/
-env*
 /github-access.txt
+/aws-endpoint.txt
 dist/
 build/
 *.egg
